@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./server-settings-styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANAM Temperature Dashboard</title>
+</head>
+
+<body>
+    <div class="page" id="page">
+        <header class="header">
+            <div class="header-container">
+                <h1 class="header-title">Temperature <br> Dashboard</h1>
+                <h2 class="header-page-title">Server Settings</h2>
+                <div class=""></div>
+                <div class="header-right-section">
+                    <div class="header-icon-right">
+                        <img src="../images/notification.svg" class="header-right-icon">
+                    </div>
+                    <div class="header-right">
+                        <div class="header-user">
+                            <img src="../images/user.svg" alt="user" class="header-user-image">
+                            <h3 class="header-user-info">John Smith <br> Admin</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="left-settings">
+            <div class="left-settings-home">
+                <img src="../images/home.svg" class="left-settings-icon">
+                <h2 class="left-settings-text">Home</h2>
+            </div>
+            <div class="left-settings-server">
+                <img src="../images/settings.svg" class="left-settings-icon">
+                <h2 class="left-settings-text">Server Settings</h2>
+            </div>
+            <div class="left-settings-email">
+                <img src="../images/mail.svg" class="left-settings-icon">
+                <h2 class="left-settings-text">Email Settings</h2>
+            </div>
+            <div class="left-settings-sms">
+                <img src="../images/sms-message.svg" class="left-settings-icon">
+                <h2 class="left-settings-text">SMS Settings</h2>
+            </div>
+            <div class="left-settings-print">
+                <img src="../images/printer.svg" class="left-settings-icon"></icon>
+                <h2 class="left-settings-text">Print Settings</h2>
+            </div>
+
+            <div class="left-settings-canam">
+                <img src="../images/canam-logo.png" alt="canam logo" class="left-settings-canam-logo">
+            </div>
+        </section>
+
+
+        <section class="middle">
+            <h3 class="middle-title">Server Information</h3>
+
+            <div class="middle-left">
+                <h3 class="middle-left-title"></h3>
+                <div class="middle-left-container">
+                    <div class="middle-left-container-title">Connected Clients</div>
+                    <div class="middle-left-notifications">
+                        <p>Local client</p>
+                        <p>Strength: Excellent</p>
+                        <div class="client-buttons">
+                            <button class="middle-left-button-clients">Save settings</button>
+                            <button class="middle-left-button-clients">Change connection</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="middle-right">
+                <h3 class="middle-right-title"></h3>
+                <div class="middle-right-temp-container">
+                    <div class="middle-right-temp-container-title">Toggles </div>
+                    <section class="middle-right-temp">
+                        <div class="middle-left-notifications-div">
+                            <p>Act as a server for others?</p>
+                            <label for="server-notification" class="switch">
+                                <input type="checkbox" class="switch-input" id="server-notification">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <p class="middle-right-temp-p">Use this PC IP & credentials in Temperature device settings
+                        </p>
+
+                        <div class="middle-left-notifications-div">
+                            <p>Enable external access</p>
+                            <label for="externall-access" class="switch">
+                                <input type="checkbox" class="switch-input" id="externall-access">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <p class="middle-right-temp-p">External access link</p>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+            <div class="middle-bottom">
+                <div class="middle-bottom-container">
+                    <div class="middle-bottom-container-title">
+                        Server Connections (Strengths)
+                    </div>
+                    <div class="middle-bottom-container-grid">
+                        <div class="middle-bottom-left">
+                            <div class="middle-bottom-left-line">
+                                <img src="../images//wifi-signal.svg" alt="wifi signal" class="middle-bottom-wifi">
+                                <p>[Building ##] server</p>
+                                <div class="middle-bottom-image-container">
+                                    <img src="../images/rounded-info-button.svg" alt="info-button"
+                                        class="middle-bottom-info" />
+                                    <div class="middle-bottom-info-tooltip">
+                                        <p><b>Server Connection Strength: </b></p>
+                                        <p>Excellent</p>
+                                        <p> <b> Server Address: </b> </p>
+                                        <p>195.27.18.12341234</p>
+                                        <p> <b> Server Port: </b></p>
+                                        <p>5252</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="middle-bottom-left-line">
+                                <img src="../images//wifi-signal.svg" alt="wifi signal" class="middle-bottom-wifi">
+                                <p>[Building ##] server</p>
+                                <div class="middle-bottom-image-container">
+                                    <img src="../images/rounded-info-button.svg" alt="info-button"
+                                        class="middle-bottom-info" />
+                                    <div class="middle-bottom-info-tooltip">
+                                        <p><b>Server Connection Strength: </b></p>
+                                        <p>Excellent</p>
+                                        <p> <b> Server Address: </b> </p>
+                                        <p>195.27.18.12341234</p>
+                                        <p> <b> Server Port: </b></p>
+                                        <p>5252</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="middle-bottom-left-line">
+                                <img src="../images//wifi-signal.svg" alt="wifi signal" class="middle-bottom-wifi">
+                                <p>[Building ##] server</p>
+                                <div class="middle-bottom-image-container">
+                                    <img src="../images/rounded-info-button.svg" alt="info-button"
+                                        class="middle-bottom-info" />
+                                    <div class="middle-bottom-info-tooltip">
+                                        <p><b>Server Connection Strength: </b></p>
+                                        <p>Excellent</p>
+                                        <p> <b> Server Address: </b> </p>
+                                        <p>195.27.18.12341234</p>
+                                        <p> <b> Server Port: </b></p>
+                                        <p>5252</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="middle-bottom-left-line">
+                                <img src="../images//wifi-signal.svg" alt="wifi signal" class="middle-bottom-wifi">
+                                <p>[Building ##] server</p>
+                                <div class="middle-bottom-image-container">
+                                    <img src="../images/rounded-info-button.svg" alt="info-button"
+                                        class="middle-bottom-info" />
+                                    <div class="middle-bottom-info-tooltip">
+                                        <p><b>Server Connection Strength: </b></p>
+                                        <p>Excellent</p>
+                                        <p> <b> Server Address: </b> </p>
+                                        <p>195.27.18.12341234</p>
+                                        <p> <b> Server Port: </b></p>
+                                        <p>5252</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="middle-bottom-right">
+                            <div class="middle-bottom-right-line">
+                                <img src="../images//wifi-signal.svg" alt="wifi signal" class="middle-bottom-wifi">
+                                <p>[Building ##] server</p>
+                                <div class="middle-bottom-image-container">
+                                    <img src="../images/rounded-info-button.svg" alt="info-button"
+                                        class="middle-bottom-info" />
+                                    <div class="middle-bottom-info-tooltip">
+                                        <p><b>Server Connection Strength: </b></p>
+                                        <p>Excellent</p>
+                                        <p> <b> Server Address: </b> </p>
+                                        <p>195.27.18.12341234</p>
+                                        <p> <b> Server Port: </b></p>
+                                        <p>5252</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="middle-bottom-right-line">
+                                <img src="../images//wifi-signal.svg" alt="wifi signal" class="middle-bottom-wifi">
+                                <p>[Building ##] server</p>
+                                <div class="middle-bottom-image-container">
+                                    <img src="../images/rounded-info-button.svg" alt="info-button"
+                                        class="middle-bottom-info" />
+                                    <div class="middle-bottom-info-tooltip">
+                                        <p><b>Server Connection Strength: </b></p>
+                                        <p>Excellent</p>
+                                        <p> <b> Server Address: </b> </p>
+                                        <p>195.27.18.12341234</p>
+                                        <p> <b> Server Port: </b></p>
+                                        <p>5252</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="middle-bottom-right-line">
+                                <img src="../images//wifi-signal.svg" alt="wifi signal" class="middle-bottom-wifi">
+                                <p>[Building ##] server</p>
+                                <div class="middle-bottom-image-container">
+                                    <img src="../images/rounded-info-button.svg" alt="info-button"
+                                        class="middle-bottom-info" />
+                                    <div class="middle-bottom-info-tooltip">
+                                        <p><b>Server Connection Strength: </b></p>
+                                        <p>Excellent</p>
+                                        <p> <b> Server Address: </b> </p>
+                                        <p>195.27.18.12341234</p>
+                                        <p> <b> Server Port: </b></p>
+                                        <p>5252</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="middle-bottom-right-line">
+                                <img src="../images//wifi-signal.svg" alt="wifi signal" class="middle-bottom-wifi">
+                                <p>[Building ##] server</p>
+                                <div class="middle-bottom-image-container">
+                                    <img src="../images/rounded-info-button.svg" alt="info-button"
+                                        class="middle-bottom-info" />
+                                    <div class="middle-bottom-info-tooltip">
+                                        <p><b>Server Connection Strength: </b></p>
+                                        <p>Excellent</p>
+                                        <p> <b> Server Address: </b> </p>
+                                        <p>195.27.18.12341234</p>
+                                        <p> <b> Server Port: </b></p>
+                                        <p>5252</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="right">
+            <div class="right-container">
+                <h3 class="right-container-title">Server Connection Client</h3>
+                <div class="right-container-temp">
+                    <input type="text" class="right-container-temp-input" placeholder="Enter new server address">
+                    <input type="text" class="right-container-temp-input" placeholder="Port">
+                    <input type="text" class="right-container-temp-input" placeholder="Server name">
+                    <div class="right-container-temp-input-buttons">
+                        <button class="right-container-temp-submit">Connect</button>
+
+                    </div>
+                </div>
+                <div class="right-container-testing">
+                    <div class="right-container-testing-title">Choose from saved <br>server settings</div>
+                    <div class="right-container-testing-content">
+
+                        <select id="select-server" name="select-server">
+                            <option value="select-server">Select server</option>
+                        </select>
+
+                        <div class="right-container-temp-input-buttons">
+                            <button class="right-container-temp-submit">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="right-bottom-button">Reload Saved Data</button>
+            </div>
+            <div class="right-bottom">
+
+            </div>
+        </section>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

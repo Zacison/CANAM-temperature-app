@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./print-settings-styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANAM Temperature Dashboard</title>
+</head>
+
+<body>
+    <div class="page" id="page">
+        <header class="header">
+            <div class="header-container">
+                <h1 class="header-title">Temperature <br> Dashboard</h1>
+                <h2 class="header-page-title">Print Settings</h2>
+                <div class=""></div>
+                <div class="header-right-section">
+                    <div class="header-icon-right">
+                        <img src="../images/notification.svg" class="header-right-icon">
+                    </div>
+                    <div class="header-right">
+                        <div class="header-user">
+                            <img src="../images/user.svg" alt="user" class="header-user-image">
+                            <h3 class="header-user-info">John Smith <br> Admin</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="left-settings">
+            <div class="left-settings-home">
+                <img src="../images/home.svg" class="left-settings-icon">
+                <h2 class="left-settings-text">Home</h2>
+            </div>
+            <div class="left-settings-server">
+                <img src="../images/settings.svg" class="left-settings-icon">
+                <h2 class="left-settings-text">Server Settings</h2>
+            </div>
+            <div class="left-settings-email">
+                <img src="../images/mail.svg" class="left-settings-icon">
+                <h2 class="left-settings-text">Email Settings</h2>
+            </div>
+            <div class="left-settings-sms">
+                <img src="../images/sms-message.svg" class="left-settings-icon">
+                <h2 class="left-settings-text">SMS Settings</h2>
+            </div>
+            <div class="left-settings-print">
+                <img src="../images/printer.svg" class="left-settings-icon"></icon>
+                <h2 class="left-settings-text">Print Settings</h2>
+            </div>
+
+            <div class="left-settings-canam">
+                <img src="../images/canam-logo.png" alt="canam logo" class="left-settings-canam-logo">
+            </div>
+        </section>
+
+
+        <section class="middle">
+            <h3 class="middle-title">Print Settings</h3>
+
+            <div class="middle-container">
+                <div class="middle-container-title">Set Printer Data</div>
+
+                <div class="middle-container-flex">
+
+                    <div class="middle-left">
+                        <h3 class="middle-left-title"></h3>
+                        <div class="middle-left-container">
+
+                            <div class="middle-left-notifications">
+                                <div class="left-container-temp">
+                                    <input type="text" class="right-container-temp-input" placeholder="Printer Name ">
+                                    <input type="text" class="right-container-temp-input" placeholder="Utility Path ">
+                                </div>
+                                <div class="client-buttons">
+                                    <button class="middle-left-button-clients">Submit</button>
+                                    <button class="middle-left-button-clients">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="middle-right">
+                        <div class="middle-right-temp-container">
+                            <p>Current Printer Value</p>
+                            <h3>EPSON TM-m10 Receipt</h3>
+                            <p>Current Utility Path Value</p>
+                            <h3>C:/SumatraPDF/SumatraPDF.exe</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="middle-bottom">
+                <div class="middle-bottom-container">
+                    <div class="middle-bottom-container-title">
+                        Current Printer Value
+                    </div>
+                    <div class="middle-bottom-container-grid">
+                        <div class="middle-bottom-left">
+                            <p><b>Normal Template: </b></p>
+                            <p>WELCOME</p>
+                            <p>{{date}}</p>
+                            <p>{{time}}</p>
+                            <br>
+                            <p><b>Alarm Template </b></p>
+                            <p>HIGH TEMPERATURE</p>
+                            <p>{{date}}</p>
+                            <p>{{time}}</p>
+                            <p>
+                                Your temperature registered at or ablove 99.5F. You will not be allowed to enter the
+                                facility today. Please go home, and contact your supervisor or HRM. Your supervisor or
+                                HRM may have additional guidance for you. If you have other symptioms of illness, you
+                                should stay home and consider contacting your health care provier.
+                            </p>
+
+                        </div>
+
+                        <div class="middle-bottom-right">
+                            <button class="right-container-temp-submit">LOAD DEFAULT TEXT</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="right">
+            <div class="right-container">
+                <h3 class="right-container-title">Set New Print Template</h3>
+                <div class="right-container-temp">
+                    <input type="text" class="right-container-temp-input" placeholder="Normal Template">
+                    <input type="text" class="right-container-temp-input right-container-temp-input-bottom" placeholder="Alarm Template">
+
+
+                    <div class="right-container-temp-input-buttons">
+                        <button class="right-container-temp-submit">Submit</button>
+                        <button class="right-container-temp-submit">Clear</button>
+
+                    </div>
+                </div>
+
+                <button class="right-bottom-button">Reload Saved Data</button>
+            </div>
+            <div class="right-bottom">
+
+            </div>
+        </section>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
